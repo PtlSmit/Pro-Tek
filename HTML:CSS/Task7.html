@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Form and Table</title>
+        <link rel="stylesheet" href="Task7.css">
+    </head>
+    <body>
+        <table id="table">
+            <form action="https://www.w3schools.com/html/default.asp">
+                <tr id="heading">
+                    <th>Name</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td><label for="Name">Name</label></td>
+                    <td><input type="text" name="Name" id="nested" required></label></td>
+                </tr>
+                <tr>
+                    <td rowspan="1"><label for="Sex">Sex</label></td>
+                    <td><table id="nested">
+                        <tr>
+                            <td id="noborder"><input type="radio"  >Male</td>
+                        </tr>
+                        <tr>        
+                            <td id="noborder"><input type="radio">Female</td>
+                        </tr>    
+                    </table>
+                </tr>
+                <tr>
+                    <td><label for="EyeColor">Eye Color</label></td>
+                    <td>
+                        <select name="Eye Color" id="EyeColor">
+                            <option value="Green">Green</option> 
+                            <option value="Hazel">Hazel</option>
+                            <option value="Black">Black</option>
+                            <option value="Brown">Brown</option>
+                        </select>      
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="1"><label for="weight">Check all that apply</label></td>
+                    <td> 
+                        <table id="nested">
+                            <tr>
+                                <td id="noborder"><input type="checkbox">Over 6 feet tall</td>
+                            </tr>
+                            <tr>
+                                 <td id="noborder"> <input type="Checkbox">Over 200 Pounds</td>
+                             </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Describe your athletic ability:</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="Ability"></label>
+                        <textarea name="Ability" id="noborder" cols="95" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="noborder" colspan="2">
+                        <button id="button">
+                            Enter Your Information
+                    </button>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>

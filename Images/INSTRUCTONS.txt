@@ -1,0 +1,12 @@
+You are given 20 mins to fix all the issues in TASK 2:
+
+You should fix the home.html to look exactly like the “actual-output.jpg” that is inside the design folder.
+
+Please identify the fixes that you need to perform. For example few requirements are noted below. 
+(This is not a complete list, this is for example list only)
+
+01)Remove the extra gap top off the logo
+02)Remove extra borders left panel and right panel
+03)In left panel  align the  2nd paragraph   as per design
+
+Make sure the page is looking exactly like the design given in the “design” folder.

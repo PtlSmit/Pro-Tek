@@ -1,0 +1,24 @@
+#div{
+    margin-left: 20%;
+    margin-top: 2%;
+}
+.heading{
+  /*  text-align: center; */
+    text-size-adjust: 50%;
+}
+#Pwd{
+  margin-left: 34px; 
+} 
+#MaleRadio{
+    margin-left: 49px;
+    color: gray;
+    padding: 0.5em;
+    -webkit-appearance: checkbox; 
+    border: 1px solid #000000; 
+}
+#FemaleRadio{
+    margin-left: 105px;
+    padding: 0.5em;
+    -webkit-appearance: checkbox; 
+    border: 1px solid #000000;
+}

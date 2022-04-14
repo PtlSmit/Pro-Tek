@@ -1,0 +1,110 @@
+#main{
+    height: 100%;
+    width: 100%;   
+    border: 2px solid black; 
+    display: flex;
+    flex-wrap: wrap;
+}
+#Header{
+    height: 18%;
+    width: 100%;
+    background-image: linear-gradient(rgb(30, 30, 221), rgb(204,228,238));
+    /*rgb(198, 221, 243)); */
+   /* rgb(235, 240, 255)); */
+    border-bottom: 1px solid rgb(204, 228, 238);
+}
+#LinkHead{
+    height: 10%;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 3%;
+}
+.link{
+    text-decoration-line: none;
+    color: white;
+}
+#LHome{
+    margin-top: 1%;
+    margin-left: 6%;
+}
+#LAbout{
+    margin-top: -3%;
+    margin-left: 26%;
+}
+#LPortfolio{
+    margin-top: -3%;
+    margin-left: 46%;
+}
+#LServices{
+    margin-top: -3%;
+    margin-left: 66%;
+}
+#fontimg{
+    position: absolute;
+    left: 10%;
+}
+#LContact{
+    margin-top: -3%;
+    margin-left: 86%;
+}
+#imgHead{
+    height: 41%;
+    width: 87.5%;
+    position: relative;
+    left: 5.1%;
+    top: 32%;
+}
+#fontimg{
+    position: absolute;
+    top: -2%;
+    left: 5%;
+    color: white;
+    height: 100%;
+    width: 29%;
+}
+.h3{
+    margin-left: 5%;
+    color: whitesmoke;
+    background: rgba(120, 165, 211, 0.1);
+}
+#blank{
+    height: 2%;
+    width: 90%;
+    background-image: linear-gradient(rgb(0, 10, 50), rgb(0, 40, 50));
+    position: absolute;
+    top: 50.6%;
+    left: 5.3%;
+}
+#Content{
+    height: 45%;
+    width: 87.5%;
+    background-color: skyblue;
+    border: 10px solid white;
+    border-bottom: none;
+    position: absolute;
+    top: 52.6%;
+    left: 5.6%;
+}
+#leftpanel{
+    height: 78%;
+    width: 5%;
+    background-image: linear-gradient(rgb(0, 10, 50), rgb(0, 40, 50));
+    position: absolute;
+    top: 21%;
+}
+#rightpanel{
+    height: 78%;
+    width: 5%;
+    background-image: linear-gradient(rgb(0, 10, 50), rgb(0, 40, 50));
+    position: absolute;
+    top: 21%;
+    left: 94.5%;
+}
+.pre{
+    font-size: large;
+    margin-left: 12px;
+}
+.h1{
+    margin: 12px;
+}

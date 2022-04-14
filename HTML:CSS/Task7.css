@@ -1,0 +1,26 @@
+#table{
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+}
+tr,td{
+    border: 1px solid black;
+    font-size: x-large;
+}
+#heading{
+    background-color: rgb(128, 112, 199);
+}
+#nested{
+    width: 100%;
+    height: 100%;
+    
+}
+#noborder{
+    border: none;
+}
+#button{
+    background-color: gray;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30%;
+}

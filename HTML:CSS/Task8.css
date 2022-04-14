@@ -1,0 +1,96 @@
+#main{
+    height: 99.9%;
+    width: 99.9%;
+   
+}
+#logo{
+    height: 10%;
+    width: 94%;
+    border-bottom: 5px solid rgb(124, 200, 230);
+    position: relative;
+    left: 3%;
+}
+.imglogo{
+    margin-left: 80%;
+    position: relative;
+    top: 10%;
+}
+#Content{
+    height: 30%;
+    width: 94%;
+    position: relative;
+    left: 3%;
+    top: 3%;
+}
+#imgcontent{
+    height: 100%;
+    width:100%;
+}
+#Contentp{
+    width: 80%;
+    position: relative;
+    left: 21%;
+    top: -110%;
+}
+#BoxContent{
+    height: 35%;
+    width: 94%;
+    position: relative;
+    left: 3%;
+    top:10% ;
+}
+#Build{
+    height:100% ;
+    width: 31%;
+    border: 1px solid gray;
+}
+#Test{
+    height:100% ;
+    width: 31%;
+    border: 1px solid gray;
+    position: relative;
+    left:34% ;
+    top: -100.9%;
+}
+#Deploy{
+    height:100% ;
+    width: 31%;
+    border: 1px solid gray;
+    position: relative;
+    left:68% ;
+    top: -202%;
+}
+.boxradius{
+    border-radius: 2%;
+    font-size: medium;
+    padding-left: 1%;
+}
+#footer{
+    height: 2%;
+    width: 94%;
+    background-color: rgb(124, 200, 230);
+    color: black;
+    position: relative;
+    left: 3%;
+    top: 20%;
+}
+#linkfooter{
+    height: 100%;
+    width: 24%;
+   
+}
+#copyfooter{
+    height:100%;
+    width:70%;
+    position: relative;
+    left: 29.7%;
+   
+    bottom: 115%;
+}
+.copyright{
+    text-align: end;
+    margin-top: 0.0%;
+}
+.trial{
+    text-decoration: transparent;
+}

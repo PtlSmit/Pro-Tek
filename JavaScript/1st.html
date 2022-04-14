@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div {
+          width: 500px;
+          height: 500px;
+          border: 1px solid red;
+          text-align: center;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <p>Click in the div element below to get the x (horizontal) and y (vertical) coordinates of the mouse pointer, when it is clicked.</p>
+        
+        <div onclick="showCoords(event)"><p id="demo"></p></div>
+        
+        <p><strong>Tip:</strong> Try to click different places in the div.</p>
+        
+        <script>
+        function showCoords(event) {
+          var cX = event.clientX;
+          var sX = event.screenX;
+          var cY = event.clientY;
+          var sY = event.screenY;
+          var coords1 = "client - X: " + cX + ", Y coords: " + cY;
+          var coords2 = "screen - X: " + sX + ", Y coords: " + sY;
+          document.getElementById("demo").innerHTML = coords1 + "<br>" + coords2;
+        }
+        </script>
+</html> -->
+<!DOCTYPE html>
+<html lang=“en”>
+<head>
+    <meta charset=“UTF-8">
+    
+    <script src="1st.js"></script>
+</head>
+<body>
+  <script>
+
+const myDiv = document.createElement("div");
+myDiv.style.width = "500px";
+myDiv.style.height = "500px";
+myDiv.style.border = "1px solid red";
+document.body.appendChild(myDiv);
+myDiv.addEventListener("mouseover", moveDiv);
+function moveDiv(){
+    let pixels = Math.floor(Math.random() * (150 - 30 + 1)) + 30;
+    const direction = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
+    console.log(pixels, direction);
+    if (direction == 1)
+    {
+        myDiv.style.marginTop = `${pixels}px`;
+    }
+    else if(direction == 2)
+    {
+        myDiv.style.marginRight = `${pixels}px`;
+    }
+    else if(direction == 3)
+    {
+        myDiv.style.marginBottom = `${pixels}px`;
+    }
+    else if(direction == 4)
+    {
+        myDiv.style.marginLeft = `${pixels}px`;
+    }
+}
+  </script>
+</body>
+</html>
