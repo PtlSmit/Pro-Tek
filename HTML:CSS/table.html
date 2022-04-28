@@ -1,4 +1,4 @@
-<html>
+<!-- <!-- <html>
     <head>
         <title>Table Form</title>
         <link rel="stylesheet" href="Table.css">
@@ -26,32 +26,48 @@
         </table>
     </body>
 </html>
+ -->
 
+
+<!DOCTYPE html>
 <html>
-
-<head>
-	<title>The inset property in CSS</title>
-	<style type="text/css">
-		div {
-	  background-color: pink;
-	  width: 150px;
-	  height: 120px;
-	  position: relative;
-	  color: blue;
-	}
-	
-	.exampleText {
-	  writing-mode: sideways-rl;
-	  position: absolute;
-	  inset: 20px 40px 30px 10px;
-	  background-color: #f8fc08;
-	}
-	</style>
-</head>
-
-<body>
-	<div> <span class="exampleText">Study Tonight</span>
-	</div>
-</body>
-
+    <head>
+        <title>Geolocation</title>
+        <style>
+            *{
+                
+  color: green;
+  font-size: 20px;
+  line-height: 25px;
+  
+}
+        
+        </style>
+    </head>
+  <body>
+     <p>Click "try it" button to get your coordinates.</p>
+     <button onclick="getLocation()">Try It</button>
+     <p id="demo"></p>
+     <div>
+         <p>Hello World !</p>
+     </div>
+     <script>
+        var x = document.getElementById("demo");
+        
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else { 
+            x.innerHTML = "Geolocation functionality is not supported by this browser.";
+          }
+        }
+        
+     let y=   function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude + 
+          "<br>Longitude: " + position.coords.longitude;
+        }
+        document.write ("position:", y);
+     </script>
+     
+  </body>
 </html>

@@ -1,0 +1,137 @@
+<!-- <html>
+    <head>
+    <style>
+        #main_div {
+             width: 400px;
+             margin: 10px auto;
+             border: 4px solid #cccccc;
+             padding: 5px;
+        }
+
+        .floated_div {
+             float: left;
+             width: 50px;
+             height: 50px;
+             border: 2px solid #990000;
+             margin: 10px;
+             
+        }
+    </style>
+    <script>
+    const x = 123;
+        let y = x;
+      
+document.write(x);
+document.write('<br/>');
+document.write(y);
+y =54;
+    </script>
+    </head>
+    <body>
+        <div id="main_div">
+             <p>Clear Float Demo</p>
+            
+             <div class="floated_div"></div>
+             <div class="floated_div"></div>
+             <div class="floated_div"></div>
+             <div class="floated_div"></div>
+             <div class="floated_div"></div>
+             <div style="clear:both"></div>    Adding this fixed the issue
+        </div>
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   /*  let name ={
+            firstName: "Smit",
+            lastName: "Patel",
+        }
+    let fullName= function(hometown,state){
+                console.log(this.firstName+ " " + this.lastName + " -" + hometown 
+                +" ," + state);
+            }     
+
+    let name2 ={
+            firstName: "Meet",
+            lastName: "Patel",
+        }
+
+        /// Call Mehtod
+        fullName.call(name,"Fremont", "California");
+        fullName.call(name2,"Des Plaines", "Illions");
+
+
+        /// Apply Method
+        fullName.apply(name,["Fremont", "California"]);
+        fullName.apply(name2,["Des Plaines", "Illions"]);
+
+        ///Bind Method
+        let fullName1 = fullName.bind(name2,"Des Plaines", "Illions");
+        console.log(fullName1);
+        fullName1();
+
+        /// CLosure Function
+        function x (){
+            let a =7;
+                function y(){
+                    console.log(a);
+                }
+               return y;
+        }
+       let z= x();
+       console.log(z);
+       z();
+        /// Closure FUnction - parents of parents
+       function c(){
+          function a (){
+            let i=7;
+                function b(){
+                    console.log(i);
+                }
+               b();
+        } a();
+
+    }c();
+
+    /// Getter and Setter on Object
+    const person ={
+        fName: "Smit",
+        lName:"Patel",
+        Car: "Honda",
+        get vehicle(){
+            return this.vehicle;
+        },
+        set car(Car){
+            this.vehicle = honda;
+        }
+    };
+    person.Car ="Honda1";
+ console.log(person); */
+/*  let counter = new Array(3);
+ console.log(counter);
+ var arr = [5, 1, 9, 5, 7];
+
+		var smallest = arr.sort((a, b) => a - b);
+
+		alert(smallest[0]); */
+
+    let arr=[1,2,54,5]
+    /* let smallest= arr.sort((a,b) => (a-b)); 
+    console.log(smallest);
+ */
+ function miniMaxSum(arr) {
+    // Write your code here
+    return [Math.min(...arr),Math.max(...arr)];
+}
+console.log(miniMaxSum(arr));
+    </script>
+</body>
+</html>

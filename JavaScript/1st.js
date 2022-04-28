@@ -1,4 +1,57 @@
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+ /* var twoSum = function(nums, target) {
+    const indices = new Map();
 
+    for (let index = 0; index < nums.length; index++) {
+        const complement = target - nums[index];
+
+        if (indices.has(complement)) {
+            return [indices.get(complement), index]
+        }
+
+        indices.set(nums[index], index)
+    }
+}; */
+
+
+var twoSum = function(nums, target) {
+    for (let i = 0; i < nums.length; i++) {
+        for (let j = i + 1; j < nums.length; j++) {
+            if (nums[i] + nums[j] == target) {
+                return [i, j]
+            }
+        }
+    }
+};
+let num1 = [2,7,11,15];
+document.write("The answer is:", twoSum(num1));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 const myDiv = document.createElement("div");
 myDiv.style.width = "500px";
 myDiv.style.height = "500px";
@@ -27,4 +80,6 @@ function moveDiv(){
         myDiv.style.marginLeft = `${pixels}px`;
         
     }
-}
+} */
+
+

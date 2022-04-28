@@ -1,0 +1,50 @@
+.bulb{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+  }
+  .on{
+    background-color: yellow;
+  }
+  .off{
+    background-color: black;
+  }
+.main{
+    height: 500px;
+    width: 1430px;
+    background-color: lightslategray;
+}
+.left{
+    left: 1%; 
+}
+.watch{
+    height: 300px;
+    width: 300px;
+    background-color: lightcoral;
+    position: relative;
+    /* top: 10%; */
+}
+.middle{
+    position: relative;
+    left: 40%; 
+    top: -80%;
+}
+.right{
+    position: relative;
+    left: 77%;
+    top: -160%; 
+}
+.leftw{
+    position: relative;
+    left: -39%;
+    top: -3%; 
+}
+.middlew{
+    position: relative;
+    top: -83%; 
+}
+.rightw{
+    position: relative;
+    left: 38%;
+    top: -163%;
+}

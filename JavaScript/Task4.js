@@ -40,4 +40,26 @@ const output5 = arry5.reduce((accr1,curr1) => {
 0);
 console.log(output5);
 
+//Q6
+/* const arry6 = new Map();
+function removeDuplicate(){
+    for(let i= 0; i<nums.length; i++){
+        if()
+    }
+} */
+let a = [1,2,3,4,3,2,1];
+const lonelyInteger = function (a) {
+    return a[i]
+};
 
+document.write(lonelyInteger(a));
+
+
+
+/* const arry2 = function (vowel) {
+    return vowel.filter(it => it.includes("a") || it.includes("e") || it.includes("i") || it.includes("o") || 
+    it.includes("u"));
+    let vowel = ["Nike","Adida", "Puma", "Sneakers", "Reebok", "Gym"];
+console.log(arry2(vowel));
+
+}; */
