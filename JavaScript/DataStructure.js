@@ -663,8 +663,68 @@ console.log(sum1(3,4)) */
 
 
 
-function myFunction(){
+/* function myFunction(){
     return this;
 }
 let x = myFunction();
-console.log(x);
+console.log(x); */
+/* class Header{
+    constructor(){
+        this.color = "Red";
+    }
+    changeColor = function(){
+        
+    }
+} */
+/* let pool = 82303749230
+function numOfIds(pool) {
+    let n = pool.length;
+    if (pool|| pool.length <11) return 0;
+    
+    
+    let countOfEight = 0;
+    for(let i =0; i<=n ;i++){
+        if (i == '8') return countOfEight++;
+        else return 0;
+    }
+          if (countOfEight>n) return n;
+          else return countOfEight;
+  }
+  console.log(numOfIds()); */
+  /* function calculate(a, b) {
+    const add = a + b;
+    const subtract = a - b;
+    const multiply = a * b;
+    const divide = a / b;
+  
+    return [add, subtract, multiply, divide];
+  }
+  
+  const [add, subtract, multiply, divide] = calculate(4, 7);
+  console.log(calculate(4,7)); */
+  
+  /* const vehicleOne = {
+      brand : "Ford",
+      model : "Mustang",
+      year : 2021,
+      color: "Red"
+  }
+  myVehicle(vehicleOne);
+
+  function myVehicle({brand,model,year,color}){
+      const msg = "My" + model + " ";
+      console.log(msg);
+  }
+   */
+
+  const number1 = [1,2,3];
+  const number2 = [4,5,6];
+  const combine = [...number1,...number2];
+  
+  const [one,two,...rest] = combine;
+  console.log(combine);
+
+  const numbers = [1, 2, 3, 4, 5, 6];
+
+const [one, two, ...rest] = numbers;
+console.log(numbers);

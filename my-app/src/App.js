@@ -3,8 +3,9 @@ import './App.css';
 import Amazon from './Amazon';
 import './Amazon.css';
 import Bulb1 from './Amazon';
-
-
+import Task3 from './Task3';
+import SelfReact from './SelfReact'
+import '/SelfReact.css';
 
 
 
@@ -58,13 +59,15 @@ const Bulb = props => {
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      {/* <Header></Header>
       <SearchBar/>
       <SideBar/>
       <Content/>
       <Bulb on/>
       <Bulb off/>
-      <Amazon/>
+      <Amazon/> 
+      <Task3/>*/}
+      <SelfReact/>
     </div>
   );
 }
