@@ -2,7 +2,7 @@ import React from "react";
 import { ReactDOM } from "react";
 import './SelfReact.css';
 
-const MainTable = () =>{
+/* const MainTable = () =>{
    return (
       <div>
           <table className='tableprop'>
@@ -52,13 +52,22 @@ function Practice() {
        {x>0 ? <strong> Employees Table</strong> : <strong> Good Bye !</strong>}
       </div>
    );
+} */
+const Greet = (props) =>{
+   return (
+      <>
+      <h1> Hello {props.name} a.k.a {props.heroname}</h1>
+      {props.children}
+      </>
+   );
 }
-
 function SelfReact() {
    return ( 
    <>
-   <Practice />
-   <MainTable />
+   {/* <Practice />
+   <MainTable /> */}
+   
+
    </>
    );
 }

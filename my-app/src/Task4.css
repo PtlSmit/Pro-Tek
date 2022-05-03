@@ -1,0 +1,18 @@
+.bulb{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    color: red;
+  }
+  .on{
+    background-color: yellow;
+  }
+  .off{
+    background-color: black;
+  }
+  .stop{
+      background-color: red;
+  }
+  .go{
+      background-color: green;
+  }

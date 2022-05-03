@@ -1,12 +1,16 @@
 import logo from './logo.svg';
-import './App.css';
+import './Task4.css';
 import Amazon from './Amazon';
 import './Amazon.css';
 import Bulb1 from './Amazon';
-import Task3 from './Task3';
+import Task4 from './Task4';
 import SelfReact from './SelfReact'
-import '/SelfReact.css';
-
+import './SelfReact.css';
+import Task3 from './Task3';
+import EmpInfo from './EmpInfo';
+import AddEmp from './AddEmp';
+import FunctionalCompo from './FunctionalCompo';
+import ClassCompo from './ClassCompo';
 
 
 function Header(){
@@ -65,9 +69,15 @@ function App() {
       <Content/>
       <Bulb on/>
       <Bulb off/>
-      <Amazon/> 
-      <Task3/>*/}
-      <SelfReact/>
+      <Amazon/> */}
+     {/* <Task3/> */}
+      {/* <SelfReact/> */}
+      {/* <SelfReact name="mark"/> */}
+      {/* <Task4/> */}
+      {/* <EmpInfo/>
+      <AddEmp/> */}
+      <FunctionalCompo/>
+      <ClassCompo/>
     </div>
   );
 }
