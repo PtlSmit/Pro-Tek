@@ -11,6 +11,7 @@ import EmpInfo from './EmpInfo';
 import AddEmp from './AddEmp';
 import FunctionalCompo from './FunctionalCompo';
 import ClassCompo from './ClassCompo';
+import React from 'react';
 
 
 function Header(){
@@ -60,7 +61,7 @@ const Bulb = props => {
   return <div className={props.on ? "bulb on" : "bulb off"}>Bulb</div>
 }
 
-function App() {
+/* function App() {
   return (
     <div className="App">
       {/* <Header></Header>
@@ -69,17 +70,38 @@ function App() {
       <Content/>
       <Bulb on/>
       <Bulb off/>
-      <Amazon/> */}
-     {/* <Task3/> */}
-      {/* <SelfReact/> */}
-      {/* <SelfReact name="mark"/> */}
-      {/* <Task4/> */}
-      {/* <EmpInfo/>
-      <AddEmp/> */}
-      <FunctionalCompo/>
-      <ClassCompo/>
-    </div>
-  );
-}
+      <Amazon/> }*/
+    //  {/* <Task3/> */}
+      // {/* <SelfReact/> */}
+      // {/* <SelfReact name="mark"/> */}
+      // {/* <Task4/> */}
+      // <EmpInfo/>
+      // {/* <AddEmp/> */}
+      // {/* <FunctionalCompo/>
+      // <ClassCompo/> */}
+    // </div>
+  // );
+// }
 
-export default App; 
+// export default App;  */
+class App extends React.Component{
+  constructor(props){
+    super(props);
+
+    this.state = { employee:["SMit","Jeet","Meet"]};
+  }
+ AddEmpList = (item) =>{
+    console.log(item,"Function Called")
+    this.setState({employee: [...this.state.employee,item]})
+ };
+  render()
+  {
+    return(
+      <div>
+      <EmpInfo employee = {this.state.employee}/>
+      <AddEmp addEmps={this.AddEmpList}/>
+      </div>
+    );
+  }
+}
+export default App;

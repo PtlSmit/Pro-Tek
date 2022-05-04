@@ -1,15 +1,28 @@
-// import React from 'react';
-import React, { Component } from 'react';
+import React from 'react';
 
 
 class AddEmp extends React.Component {
     constructor(props) {
         super(props); 
+        this.state = {employee: ""};
     }
-    state = {  }
+
+    addEmp = () =>{
+        const {item} = this.state;
+        this.props.addEmps(item);
+        this.setState({item:''})
+    };
+
+    handleChange =(e) =>{
+        this.setState({item: e.target.value});
+    };
     render() { 
-        return (<h1>Hello World</h1>);
+        return (
+            <>
+           <input type="text" value={this.state.item} type="text" onChange={this.handleChange} />
+            <button onClick={this.addEmp}>Add</button>
+            </>
+        );
     }
 }
- 
-export default AddEmp;
+export default AddEmp; 

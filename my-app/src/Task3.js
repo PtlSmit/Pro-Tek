@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import './Task4.css';
+// import './Task4.css';
 
 
-/* const Shoppingcart = (props) =>{
+const Shoppingcart = (props) =>{
   
 // const itemList = props.items.map((items,index) => (<li key={index}>{items}</li>));
   return <ul>
     { props.items.length>0 ? <span>We have {props.items.length} items in the cart </span>: <span>Your car it empty</span> }
      {props.items.map((items,index) => (<li key={index}>{items}</li>))}
   </ul>
-} */
-class EmpTable extends Component{
+}
+/* class EmpTable extends Component{
 
   constructor(props){
     super(props)
@@ -54,13 +54,13 @@ const MainTable = () =>{
      </table>
      </div>
   );
-}
+} */
   function Task3() {
     return (
       <div>
-     {/* <Shoppingcart items = {["Apple","Banana","Orange"]}/> */}
-     <button onClick={this.onBtnClick}> Toggle </button>
-     <MainTable />
+     <Shoppingcart items = {["Apple","Banana","Orange"]}/>
+     {/* <button onClick={this.onBtnClick}> Toggle </button> */}
+     {/* <MainTable /> */}
       </div>
     );
   }

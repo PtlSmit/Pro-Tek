@@ -10,20 +10,18 @@ const Greet = (props) => {
         </>
      )
   }
-// const name = ["Mark", "Taylor","Clark"];
+const name = ["Mark", "Taylor","Clark"];
 function FunctionalCompo() {
     return ( 
     <>        
-   {/*  <Greet name="Mark" heroname = "Bat">
+    {/* <Greet name="Mark" heroname = "Bat">
       <p>This is for Child</p>
    </Greet>
     <Greet name="Taylor" heroname = "SpiderMan"/>
-    <Greet name="Clark" heroname = "SuperMan"/> */}
-    {/* <Greet name = {["Mark", "Taylor","Clark"]}/> */}
+    <Greet name="Clark" heroname = "SuperMan"/>  */}
+    <Greet name = {["Mark", "Taylor","Clark"]}/>
     </>
-
      );
 }
 
 export default FunctionalCompo; 
-

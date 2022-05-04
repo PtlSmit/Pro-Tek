@@ -5,22 +5,35 @@ class ClassCompo extends Component {
         super(props);
         this.state ={
             // messsage: 'Welcome Visitor'
-            count: 0;
+            count: 0
         }
     }
 
     state = {  }
-    changeMessage(){
-        this.setState({
-            messsage:'Thank you for Visiting'
-        })
+    increment(){
+        /* this.setState({
+            count : this.state.count +1
+        },() => {
+            console.log("CallBack Value:",this.state.count )
+        }) */
+        this.setState((prevState) => ({
+            count : prevState.count + 1
+        }));
+        console.log(this.state.count);
+    }
+
+    incrementFive(){
+        this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
     }
     render() { 
         return ( 
             <>
-         {/* <h1> hello {this.props.name} a.k.a {this.props.heroname}</h1> */}
-            <h1>{this.state.messsage}</h1>
-            <button onClick={() => this.changeMessage()}>Submit</button>
+            <h1>Count - {this.state.count}</h1>
+            <button onClick={() => this.incrementFive()}>Increment</button>
             </>
          );
     }
