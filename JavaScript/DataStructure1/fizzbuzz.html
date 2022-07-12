@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+    <script>
+        const FizzBuzz = (n) =>{
+            for(let i=0;i<=n;i++){
+                let str = "";
+                if(i%3 === 0){
+                    str += "fizz"
+                }if(i%5 === 0){
+                    str += "buzz"
+                }if(i%3 === 0 && i% 5===0){
+                    str += "fizzbuzz"
+                }
+                console.log(str)
+            }
+        }
+        console.log(FizzBuzz(12));
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>

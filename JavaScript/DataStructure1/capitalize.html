@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Capitalize</title>
+    <script>
+        const capitalize = (str) =>{
+            const arr = str.split(" ");
+            const arr1 = [];
+            for(let i =0 ; i<arr1.length;i++){
+                const word = arr1[i];
+                arr1[i].push(word[0].toUpperCase() + word.slice(1).toLowerCase());
+            }
+            return arr1.join(" ");
+        }
+       console.log(capitalize("i love cat"));
+      
+       const capitalize1 = (str) => {
+        // const str = "i love india"
+        const arr = str.split(" ");
+        const arr1 =  arr.join();
+        console.log(arr1)
+    }
+       
+       console.log(capitalize1("i love india"))
+       
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

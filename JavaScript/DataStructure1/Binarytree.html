@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Tree</title>
+    <script>
+        const binarySearch = (sortedarr,value) =>{
+            let left = 0,
+            right = sortedarr.length-1;
+
+            while(left<=right){
+                const mid = Math.floor((left+right)/2)
+                const val = sortedarr[mid];
+                if (val===value){
+                    return value;
+                }else if (val<value){
+                    left = mid + 1;
+                }else {
+                    right = mid -1;
+                }
+            }
+            return -1;
+        }
+
+        console.log(binarySearch([1,2,4,3,5],3))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

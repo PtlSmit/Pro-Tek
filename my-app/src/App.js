@@ -1,20 +1,25 @@
 import logo from './logo.svg';
-import './Task4.css';
+
 import Amazon from './Amazon';
-import './Amazon.css';
+
 import Bulb1 from './Amazon';
 import Task4 from './Task4';
 import SelfReact from './SelfReact'
-import './SelfReact.css';
+
 import Task3 from './Task3';
 import EmpInfo from './EmpInfo';
 import AddEmp from './AddEmp';
 import FunctionalCompo from './FunctionalCompo';
 import ClassCompo from './ClassCompo';
 import React from 'react';
+import Restaurant from './Restaurant';
+import FunctionalRestaurant from './functionalRestaurant';
+import { ReactDOM } from 'react';
+import Task8 from './Task8';
 
 
-function Header(){
+
+/* function Header(){
   return (
   <div>
   <input/>
@@ -33,8 +38,8 @@ function Header(){
   </div>
   </div>
   );
-}
-function SideBar(){
+} */
+/* function SideBar(){
   return (
    <p> Eligible Category</p>
       );
@@ -60,7 +65,7 @@ function Content(){
 const Bulb = props => {
   return <div className={props.on ? "bulb on" : "bulb off"}>Bulb</div>
 }
-
+ */
 /* function App() {
   return (
     <div className="App">
@@ -84,7 +89,7 @@ const Bulb = props => {
 // }
 
 // export default App;  */
-class App extends React.Component{
+/* class App extends React.Component{
   constructor(props){
     super(props);
 
@@ -97,11 +102,25 @@ class App extends React.Component{
   render()
   {
     return(
-      <div>
-      <EmpInfo employee = {this.state.employee}/>
-      <AddEmp addEmps={this.AddEmpList}/>
-      </div>
+      <div> */
+      //  {/* <EmpInfo employee = {this.state.employee}/> */}
+      // {/* <AddEmp addEmps={this.AddEmpList}/> */ }
+      
+      // {/* <Restaurant/> */}
+      // {/* <FunctionalRestaurant/> */}
+      
+     /*  </div>
     );
   }
+} */
+
+
+function App(){
+  return (
+    <>
+    {/* <Restaurant/> */}
+    <Task8/>
+    </>
+  )
 }
 export default App;

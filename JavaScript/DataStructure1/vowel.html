@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel</title>
+    <script>
+        const vowel = (str) => {
+            str = str.toLowerCase();
+            const vowels = 'aeiou'.split("");
+
+            let count = 0;
+            for (let i of str) {
+                const char = str[i];
+                for (let j of vowels) {
+                    const vow = vowel[j];
+                    if (char === vow) {
+                        count++;
+                    }
+                }
+            }
+            return count;
+        }
+        console.log(vowel("smt"));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
